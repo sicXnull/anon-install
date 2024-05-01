@@ -1,1 +1,1 @@
-tor_chroot /opt/anon/
+tor_chroot /data/anon/
