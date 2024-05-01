@@ -8,6 +8,6 @@ services:
     ports:
       - "9001:9001"
     volumes:
-      - /opt/anon/var/lib/anon/:/var/lib/anon/
-      - /opt/anon/etc/anon/:/etc/anon/
-      - /opt/anon/run/anon/:/run/anon/ #Optional dir for NYX
+      - /data/anon/var/lib/anon/:/var/lib/anon/
+      - /data/anon/etc/anon/:/etc/anon/
+      - /data/anon/run/anon/:/run/anon/ #Optional dir for NYX
