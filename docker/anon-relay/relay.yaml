@@ -3,7 +3,6 @@ services:
   relay:
     image: svforte/anon:db842126d232bebd7a41fa759016bf9ea2ed4b59
     container_name: anon-relay
-    init: true
     restart: unless-stopped
     ports:
       - "9001:9001"
