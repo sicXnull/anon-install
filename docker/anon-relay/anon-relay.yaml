@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+  relay:
+    image: ghcr.io/anyone-protocol/ator-protocol:latest
+    container_name: anon-relay
+    restart: unless-stopped
+    ports:
+      - "9001:9001"
+    volumes:
+      - /data/anon/var/lib/anon/:/var/lib/anon/
+      - /data/anon/etc/anon/:/etc/anon/
+      - /data/anon/run/anon/:/run/anon/ #Optional dir for NYX
